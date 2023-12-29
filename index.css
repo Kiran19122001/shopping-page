@@ -1,0 +1,242 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.head {
+    text-align: center;
+    word-spacing: 10px;
+}
+
+.buttonsDisplay {
+    width: 100vh;
+    padding: 10px;
+
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(231, 230, 230);
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.btn.active {
+
+    background-color: #000;
+    color: #fff;
+    width: 30%;
+    padding: 5px;
+    border-radius: 10px;
+    height: 100%;
+    margin: 0;
+}
+
+
+
+.content-cont {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-container {
+    width: 90vw;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: start;
+    height: 90vh;
+
+}
+
+.list-item {
+    list-style: none;
+    width: 25%;
+    display: flex;
+
+
+}
+
+.listDiv {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: end;
+    height: 514px !important;
+    width: 250px;
+}
+
+.badge {
+    font-weight: 550;
+    padding: 3px 5px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    width: 60%;
+    position: relative;
+    left: 5px;
+    top: 58px;
+    z-index: 10;
+}
+
+.productImage {
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+
+.firstRow {
+    display: flex;
+    align-items: center;
+
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 550;
+    max-width: 165px;
+}
+
+.companyDiv {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background: #000;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.company {
+    color: #292929;
+    font-size: 16px;
+}
+
+.secondRow {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -25px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.compare {
+    color: gray;
+    text-decoration: line-through;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.offer {
+    color: rgb(243, 104, 49);
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.button {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+
+
+/*for  Mobile Screen width */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .buttonsDisplay {
+        width: 100%;
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .list-item {
+        width: 100%;
+    }
+
+
+}
+
+/* for tablet width */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .buttonsDisplay {
+        width: 80%;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .list-item {
+        width: 50%;
+    }
+
+}
+
+
+/* for width heigher than 1024px */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    .buttonsDisplay {
+        width: 50vw;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .list-item {
+        width: 25%;
+    }
+
+
+
+
+}
